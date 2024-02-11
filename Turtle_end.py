@@ -1,3 +1,7 @@
+# Case-study #1
+# Developers:   Rusakova M. (%),
+#               Kosheleva A. (%),
+#               Timofeev I. (%)
 import math
 import turtle as t
 
@@ -6,7 +10,8 @@ t.pencolor("white")
 t.pensize(1)
 
 
-# square
+# Functions that are needed to compose tangrams:
+# Function, drawing isosceles triangle.
 def sqr(x, y, a):
     t.up()
     t.setposition(x, y)
@@ -21,7 +26,7 @@ def sqr(x, y, a):
     t.right(90)
 
 
-# triangle with two equal sides
+# Function, drawing isosceles triangle.
 def trng(x, y, d):
     t.penup()
     t.setposition(x, y)
@@ -33,7 +38,7 @@ def trng(x, y, d):
     t.forward(math.sqrt(d ** 2 + d ** 2))
 
 
-# triangle with 90-degree angle
+# Function, drawing triangle with 90-degree angle.
 def trng_90(x, y, s):
     d = math.sqrt(2 * s * s)
     t.up()
@@ -46,7 +51,7 @@ def trng_90(x, y, s):
     t.forward(s)
 
 
-# parallelogram
+#   Function, drawing parallelogram.
 def prlm(x, y, m):
     e = math.sqrt(2 * m * m)
     t.up()
@@ -62,7 +67,9 @@ def prlm(x, y, m):
     t.right(135)
 
 
-# rabbit
+# Figures made up of tangram:
+# Note: at the end of each algorithm, the turtle is rotated to the right.
+# An algorithm that draws a rabbit.
 def rabbit():
     t.fillcolor("#FEDD12")
     t.begin_fill()
@@ -107,7 +114,7 @@ def rabbit():
     t.left(45)
 
 
-# fish
+# An algorithm that draws a fish.
 def fish():
     t.right(135)
     t.fillcolor("#50BBE9")
@@ -152,7 +159,7 @@ def fish():
     t.left(90)
 
 
-# chicken
+# An algorithm that draws a chicken.
 def chckn():
     t.right(45)
     t.fillcolor("#EC66E7")
@@ -195,7 +202,7 @@ def chckn():
     t.right(135)
 
 
-# right man
+# An algorithm that draws a right man.
 def rght_man():
     t.left(135)
     t.fillcolor("#FF7C00")
@@ -241,7 +248,7 @@ def rght_man():
     t.left(90)
 
 
-# cube that is made from different shapes
+# An algorithm that draws a cube that is made from different shapes.
 def yohuuuu():
     t.right(135)
     t.fillcolor("#FEDD12")
@@ -287,7 +294,7 @@ def yohuuuu():
     t.right(45)
 
 
-# helicopter
+# An algorithm that draws a helicopter.
 def hlcpt():
     t.right(45)
 
@@ -334,7 +341,7 @@ def hlcpt():
     t.right(45)
 
 
-# sail
+# An algorithm that draws a sail.
 def sl():
     t.left(180)
 
@@ -379,7 +386,7 @@ def sl():
     t.right(180)
 
 
-# left man
+# An algorithm that draws a left man.
 def lft_man():
     t.right(135)
 
@@ -425,7 +432,7 @@ def lft_man():
     t.left(135)
 
 
-# spacecraft
+# An algorithm that draws a spacecraft.
 def rckt():
     t.left(45)
 
