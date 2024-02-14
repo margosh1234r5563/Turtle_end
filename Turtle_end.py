@@ -292,7 +292,7 @@ def yohuuuu():
     sqr(4, 0, 100)
     t.end_fill()
     t.right(45)
-
+    t.done()
 
 # An algorithm that draws a helicopter.
 def hlcpt():
