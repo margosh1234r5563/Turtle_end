@@ -1,7 +1,8 @@
 import turtle
-from turtle import *
 
-wn= turtle.Screen()
+wn = turtle.Screen()
+
+
 # пятиугольник
 def pytyg(x, y, a, l):
     l5 = turtle.Turtle()
@@ -170,9 +171,10 @@ def trpr2(x, y, a, b, l):
     tr2.up()
     tr2.end_fill()
 
+
 # =========================================================================
 # Дом из'Вверх'
-kl= turtle.Turtle()
+kl = turtle.Turtle()
 x = int(input())
 y = int(input())
 kl.penup()
@@ -205,7 +207,7 @@ kl.up()
 # Церковь из майнкрафта с солнышком
 x = int(input())
 y = int(input())
-kl1= turtle.Turtle()
+kl1 = turtle.Turtle()
 kl1.up()
 kvadrat(x, y, 100, 'gray')
 treug(x, y + 100, 100, '#855E42')
@@ -221,7 +223,7 @@ trpr(x + 200, y - 100, 25, 30, 0, '#855E42')
 # воздушный шар
 x = int(input())
 y = int(input())
-kl2= turtle.Turtle()
+kl2 = turtle.Turtle()
 kl2.up()
 paral(x, y, 200, 100, '#855E42')
 trpr1(x + 200, y, 100, 40, '#855E42')
@@ -245,7 +247,7 @@ kvadrat1(x + 150, y, 50)
 kvadrat1(x + 150, y + 50, 50)
 kvadrat1(x + 100, y + 50, 50)
 
-cat= turtle.Turtle()
+cat = turtle.Turtle()
 cat.begin_fill()
 cat.goto(0, 0)
 cat.speed(10)
